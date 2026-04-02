@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Anytime Anywhere Meditation — Transformative mindfulness practices for everyday life, with M. Llorente. Individual online sessions, 45 min. No mysticism, just results.">
+  <meta name="theme-color" content="#0e0c0a">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Anytime Anywhere Meditation · M. Llorente">
+  <meta property="og:description" content="Practical mindfulness for busy people. Online individual sessions, 45 min. No special cushions needed.">
+  <meta property="og:type" content="website">
+
+  <title>Anytime Anywhere Meditation · M. Llorente</title>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400;1,700&family=DM+Sans:wght@200;300;400;500&display=swap" rel="stylesheet">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ── CURSOR ── -->
+<div class="cursor" id="cursor" aria-hidden="true"></div>
+<div class="cursor-ring" id="cursorRing" aria-hidden="true"></div>
+
+<!-- ── MOBILE NAV OVERLAY ── -->
+<div id="navOverlay" style="display:none;position:fixed;inset:0;background:rgba(0,0,0,0.5);z-index:299" aria-hidden="true"></div>
+
+<!-- ════════════════════════════════
+     NAV
+════════════════════════════════ -->
+<nav class="nav" id="mainNav" role="navigation" aria-label="Main navigation">
+  <a href="#home" class="nav__logo" aria-label="Anytime Anywhere Meditation home">
+    Anytime<span>.</span>
+    <small>Meditation with M. Llorente</small>
+  </a>
+
+  <ul class="nav__links" id="navLinks" role="list">
+    <li><a href="#what-is">What is it?</a></li>
+    <li><a href="#session">The Session</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#book" class="nav__cta">Book a session</a></li>
+  </ul>
+
+  <button class="nav__burger" id="navBurger" aria-label="Toggle menu" aria-expanded="false" aria-controls="navLinks">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+
+<!-- ════════════════════════════════
+     HERO
+════════════════════════════════ -->
+<section class="hero" id="home" aria-label="Hero">
+
+  <div class="hero__left">
+    <p class="hero__tag">Individual online sessions · 45 min</p>
+
+    <h1 class="hero__h1">
+      <span class="line">Anytime.</span>
+      <span class="line"><em>Anywhere.</em></span>
+      <span class="line">Meditation.</span>
+    </h1>
+
+    <p class="hero__sub">
+      Practical mindfulness for busy people. No special cushions, no mysticism, no retreat required.
+      Awareness is always available — right where you are.
+    </p>
+
+    <div class="hero__actions">
+      <a href="#book" class="btn btn--primary">
+        Book a session
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+      </a>
+      <a href="#session" class="btn btn--ghost">
+        How it works
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+      </a>
+    </div>
+
+    <div class="hero__badge">
+      <div class="hero__scroll-line"></div>
+      <span class="hero__scroll-label">Discover</span>
+    </div>
+  </div>
+
+  <div class="hero__right">
+    <!--
+      IMAGE: images/photo-hero.jpg
+      To change this image, replace the file images/photo-hero.jpg
+      with your preferred photo (same filename) or update the src below.
+    -->
+    <img
+      src="images/photo-hero.jpg"
+      alt="M. Llorente — mindfulness teacher"
+      class="hero__img"
+      loading="eager"
+      width="800" height="1000"
+    >
+    <div class="hero__overlay" aria-hidden="true"></div>
+    <div class="hero__counter" aria-hidden="true">
+      <div class="hero__counter-num">∞</div>
+      <div class="hero__counter-label">Anytime · Anywhere</div>
+    </div>
+  </div>
+
+</section>
+
+
+<!-- ════════════════════════════════
+     WHAT IS MINDFULNESS
+════════════════════════════════ -->
+<section class="section section--dark" id="what-is" aria-label="What is mindfulness">
+  <div class="container">
+    <div class="what-grid">
+
+      <div class="what-image reveal">
+        <!--
+          IMAGE: images/photo-about.jpg
+          To change this image, replace images/photo-about.jpg
+          or update the src below.
+        -->
+        <img
+          src="images/photo-about.jpg"
+          alt="Meditating — calm and present"
+          loading="lazy"
+          width="600" height="800"
+        >
+        <div class="what-image__frame" aria-hidden="true"></div>
+        <div class="what-image__tag" aria-hidden="true">Awareness</div>
+      </div>
+
+      <div class="what-text">
+        <p class="label reveal">What is it?</p>
+        <h2 class="h2 reveal">Meditation without <em>conditions</em></h2>
+        <div class="divider reveal"></div>
+
+        <p class="body-text reveal reveal-delay-1">
+          Many of us are drawn to meditation, yet struggle to find extra time, a quiet space,
+          a fixed posture, or a calm state of mind. <strong style="color:var(--text)">Anytime Anywhere Meditation</strong>
+          challenges this assumption: practice does not depend on special conditions.
+        </p>
+        <p class="body-text reveal reveal-delay-2">
+          Rooted in evidence-based approaches yet universal in application, these sessions offer
+          simple and accessible methods for cultivating awareness, clarity, and well-being in
+          everyday life — in the middle of your workday, while commuting, or during a quiet moment at home.
+        </p>
+        <p class="body-text reveal reveal-delay-3">
+          No prior experience needed. No special equipment. Just you, wherever you are,
+          learning to work with your mind rather than against it.
+        </p>
+
+        <div class="pills reveal reveal-delay-4">
+          <span class="pill">Stress reduction</span>
+          <span class="pill">Mental clarity</span>
+          <span class="pill">Better sleep</span>
+          <span class="pill">Emotional balance</span>
+          <span class="pill">Focus & productivity</span>
+          <span class="pill">Lasting well-being</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ════════════════════════════════
+     BENEFITS
+════════════════════════════════ -->
+<section class="section" id="benefits" aria-label="Benefits">
+  <div class="container">
+
+    <div class="benefits-intro">
+      <p class="label reveal">Benefits</p>
+      <h2 class="h2 reveal">What really <em>changes</em></h2>
+    </div>
+
+    <div class="benefits-grid">
+
+      <div class="benefit-card reveal">
+        <div class="benefit-num">01</div>
+        <h3 class="benefit-title">Less accumulated stress</h3>
+        <p class="benefit-desc">Learn to interrupt the stress cycle before it escalates. Concrete techniques that work in under two minutes — anywhere.</p>
+      </div>
+
+      <div class="benefit-card reveal reveal-delay-1">
+        <div class="benefit-num">02</div>
+        <h3 class="benefit-title">Clearer thinking</h3>
+        <p class="benefit-desc">Cleaner decisions, less mental noise. A trained mind distinguishes the urgent from the important with ease.</p>
+      </div>
+
+      <div class="benefit-card reveal reveal-delay-2">
+        <div class="benefit-num">03</div>
+        <h3 class="benefit-title">Real presence</h3>
+        <p class="benefit-desc">Regain the ability to be fully in a conversation, a task, a moment — without being somewhere else mentally.</p>
+      </div>
+
+      <div class="benefit-card reveal">
+        <div class="benefit-num">04</div>
+        <h3 class="benefit-title">Sleeping better</h3>
+        <p class="benefit-desc">The body relaxes when the mind learns to let go. Specific techniques for those restless, looping-thought nights.</p>
+      </div>
+
+      <div class="benefit-card reveal reveal-delay-1">
+        <div class="benefit-num">05</div>
+        <h3 class="benefit-title">Response over reaction</h3>
+        <p class="benefit-desc">Creating that half-second gap between stimulus and reaction. All the difference lives there.</p>
+      </div>
+
+      <div class="benefit-card reveal reveal-delay-2">
+        <div class="benefit-num">06</div>
+        <h3 class="benefit-title">A habit that lasts</h3>
+        <p class="benefit-desc">Not a 30-day challenge. A new way of relating to your own mind that gradually becomes second nature.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ════════════════════════════════
+     HOW IT WORKS
+════════════════════════════════ -->
+<section class="section section--dark" id="how" aria-label="How it works">
+  <div class="container">
+
+    <div class="how-header">
+      <p class="label reveal">Process</p>
+      <h2 class="h2 reveal">How it <em>works</em></h2>
+    </div>
+
+    <div class="how-steps">
+
+      <div class="how-step reveal">
+        <div class="how-step__dot" aria-hidden="true">01</div>
+        <h3 class="how-step__title">Book your session</h3>
+        <p class="how-step__desc">Choose the time slot that fits your schedule. You'll receive a confirmation and Zoom link within minutes.</p>
+      </div>
+
+      <div class="how-step reveal reveal-delay-1">
+        <div class="how-step__dot" aria-hidden="true">02</div>
+        <h3 class="how-step__title">Personalised session</h3>
+        <p class="how-step__desc">45 minutes of practice tailored to where you are right now. No generic scripts — we start from your actual situation.</p>
+      </div>
+
+      <div class="how-step reveal reveal-delay-2">
+        <div class="how-step__dot" aria-hidden="true">03</div>
+        <h3 class="how-step__title">You take it with you</h3>
+        <p class="how-step__desc">Each session closes with a concrete practice you can use that very week. Simple, memorable, real-life ready.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ════════════════════════════════
+     SERVICE
+════════════════════════════════ -->
+<section class="section" id="session" aria-label="The session">
+  <div class="container">
+
+    <div style="text-align:center">
+      <p class="label reveal" style="justify-content:center">The offering</p>
+      <h2 class="h2 reveal" style="text-align:center">The <em>session</em></h2>
+    </div>
+
+    <div class="service-wrap">
+      <div class="service-card reveal">
+        <div class="service-card__glow" aria-hidden="true"></div>
+        <span class="service-badge">Individual · Online</span>
+        <h2 class="service-name">Anytime Anywhere Meditation</h2>
+        <p class="service-desc">
+          A real working session, entirely focused on you. No two sessions are the same.
+          The starting point is always your current situation — your pace, your needs, your life.
+        </p>
+
+        <div class="service-meta">
+          <div class="meta-item"><label>Duration</label><span>45 minutes</span></div>
+          <div class="meta-item"><label>Format</label><span>Zoom · Meet</span></div>
+          <div class="meta-item"><label>Modality</label><span>100% Online</span></div>
+          <div class="meta-item"><label>Scheduling</label><span>Flexible</span></div>
+        </div>
+
+        <p class="includes-title">What's included</p>
+        <ul class="includes-grid">
+          <li class="includes-item">Exploration of your current moment</li>
+          <li class="includes-item">Personalised guided practice</li>
+          <li class="includes-item">Techniques you can use that day</li>
+          <li class="includes-item">Follow-up resources</li>
+          <li class="includes-item">Open Q&amp;A throughout</li>
+          <li class="includes-item">Optional session recording</li>
+        </ul>
+
+        <div class="service-cta">
+          <a href="#book" class="btn btn--primary">
+            Book my session
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- ════════════════════════════════
+     PULLQUOTE
+════════════════════════════════ -->
+<div class="section section--darker pullquote" aria-label="Quote">
+  <div class="container">
+    <div class="pullquote__ornament" aria-hidden="true">"</div>
+    <blockquote>
+      <p class="pullquote__text reveal">
+        "Meditation does not depend on special conditions. Practice can happen
+        <em>anytime, anywhere</em> — in the middle of daily activities and real-life situations."
+      </p>
+      <footer class="pullquote__attr">M. Llorente · Anytime Anywhere Meditation</footer>
+    </blockquote>
+  </div>
+</div>
+
+
+<!-- ════════════════════════════════
+     ABOUT
+════════════════════════════════ -->
+<section class="section" id="about" aria-label="About M. Llorente">
+  <div class="container">
+    <div class="about-grid">
+
+      <div class="about-image reveal">
+        <!--
+          IMAGE: images/photo-hero.jpg
+          Reusing the hero portrait here — to use a different image for
+          the About section, add a new file to /images/ and update the src.
+        -->
+        <img
+          src="images/photo-hero.jpg"
+          alt="M. Llorente — meditation teacher"
+          class="about-img-main"
+          loading="lazy"
+          width="600" height="750"
+        >
+        <div class="about-img-deco" aria-hidden="true"></div>
+      </div>
+
+      <div class="about-text">
+        <p class="label reveal">About</p>
+        <h2 class="h2 reveal">M. <em>Llorente</em></h2>
+        <div class="divider reveal"></div>
+
+        <p class="about-intro reveal reveal-delay-1">
+          Hello. I'm M. Llorente, and I've spent years exploring what happens when the mind is given permission to pause.
+        </p>
+        <p class="body-text reveal reveal-delay-2">
+          I come from a world where everything moves fast — where there's always one more thing to do, and stopping feels like falling behind. I understand that feeling because I've lived it.
+        </p>
+        <p class="body-text reveal reveal-delay-3">
+          Meditation came into my life not as a spiritual concept, but as a concrete tool. One that can be learned, practiced, and made your own. That's what we work on together in each session.
+        </p>
+        <p class="body-text reveal reveal-delay-4">
+          My approach is practical, honest, and free of exaggerated promises. Because genuine well-being doesn't come from revelations — it comes from small changes that accumulate over time.
+        </p>
+
+        <div class="about-values reveal">
+          <div class="value-item">
+            <strong>No mysticism</strong>
+            <span>Evidence-informed, grounded practice</span>
+          </div>
+          <div class="value-item">
+            <strong>100% Online</strong>
+            <span>From wherever you are, whenever works</span>
+          </div>
+          <div class="value-item">
+            <strong>Personalised</strong>
+            <span>Adapted to your life, not a template</span>
+          </div>
+          <div class="value-item">
+            <strong>Applicable</strong>
+            <span>Techniques for your actual daily life</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ════════════════════════════════
+     TESTIMONIALS
+════════════════════════════════ -->
+<section class="section section--dark" id="testimonials" aria-label="Testimonials">
+  <div class="container">
+
+    <div class="testi-header">
+      <p class="label reveal">Testimonials</p>
+      <h2 class="h2 reveal">Those who already <em>practise</em></h2>
+    </div>
+
+    <div class="testi-grid">
+
+      <article class="testi-card reveal">
+        <div class="testi-stars" aria-label="5 stars">
+          <span aria-hidden="true">★★★★★</span>
+        </div>
+        <p class="testi-quote">"I started without much belief in it. After three sessions I was sleeping better and meetings triggered far less anxiety in me. I don't know how — but it works."</p>
+        <p class="testi-author">— C.M. · <span>Project Director</span></p>
+      </article>
+
+      <article class="testi-card reveal reveal-delay-1">
+        <div class="testi-stars" aria-label="5 stars">
+          <span aria-hidden="true">★★★★★</span>
+        </div>
+        <p class="testi-quote">"What surprised me most was how practical it is. It's not new-age relaxation. It's learning not to react on autopilot. I use it every single day now."</p>
+        <p class="testi-author">— A.R. · <span>Entrepreneur</span></p>
+      </article>
+
+      <article class="testi-card reveal reveal-delay-2">
+        <div class="testi-stars" aria-label="5 stars">
+          <span aria-hidden="true">★★★★★</span>
+        </div>
+        <p class="testi-quote">"I'd been running on fumes for months. The sessions gave me something concrete to return to whenever everything accelerates again."</p>
+        <p class="testi-author">— L.S. · <span>Physician</span></p>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ════════════════════════════════
+     BOOKING / CONTACT
+════════════════════════════════ -->
+<section class="section" id="book" aria-label="Book a session">
+  <div class="container">
+    <div class="booking-wrap">
+
+      <p class="label reveal">Book</p>
+      <h2 class="h2 reveal">First session, <em>no commitment</em></h2>
+      <p class="booking-sub reveal">
+        Tell me briefly where you are and what you're looking for. I'll confirm availability within 24 hours.
+        No automation, no bots — just me, writing back to you.
+      </p>
+
+      <form class="booking-form reveal" id="contactForm" novalidate>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label for="fName">Name</label>
+            <input type="text" id="fName" name="name" placeholder="Your name" autocomplete="given-name" required>
+          </div>
+          <div class="form-group">
+            <label for="fEmail">Email</label>
+            <input type="email" id="fEmail" name="email" placeholder="you@email.com" autocomplete="email" required>
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label for="fReason">What brings you here?</label>
+            <select id="fReason" name="reason">
+              <option value="">Choose an option</option>
+              <option value="Stress & overwhelm">Stress &amp; overwhelm</option>
+              <option value="Anxiety or mental noise">Anxiety or mental noise</option>
+              <option value="Sleep problems">Sleep problems</option>
+              <option value="Improve focus">Improve focus</option>
+              <option value="Curious, want to try">Curious, want to try</option>
+              <option value="Other">Other</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="fTime">Preferred time slot</label>
+            <select id="fTime" name="time">
+              <option value="">When works best for you?</option>
+              <option value="Mornings (9–13h)">Mornings (9–13h)</option>
+              <option value="Midday (13–15h)">Midday (13–15h)</option>
+              <option value="Afternoon (15–19h)">Afternoon (15–19h)</option>
+              <option value="Evening (19–21h)">Evening (19–21h)</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group full">
+            <label for="fMsg">Tell me a bit more (optional)</label>
+            <textarea id="fMsg" name="message" placeholder="What's going on? What do you hope to get from the session? No pressure — share whatever you'd like…"></textarea>
+          </div>
+        </div>
+
+        <div class="form-submit">
+          <button type="submit" class="btn btn--primary" id="submitBtn">
+            Send session request
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </button>
+        </div>
+        <p class="form-note">No spam. No mailing lists. Only me, personally, writing back.</p>
+
+      </form>
+    </div>
+  </div>
+</section>
+
+
+<!-- ════════════════════════════════
+     FOOTER
+════════════════════════════════ -->
+<footer class="footer" role="contentinfo">
+  <div class="container">
+
+    <div class="footer-top">
+
+      <div class="footer-brand">
+        <p class="footer-brand-name">Anytime<span>.</span> Anywhere<span>.</span></p>
+        <p class="footer-tagline">Meditation with M. Llorente. Practical mindfulness for busy people. Online individual sessions, 45 min. No mysticism. Applicable from today.</p>
+        <div class="footer-social">
+          <a href="#" aria-label="Instagram">Ig</a>
+          <a href="#" aria-label="LinkedIn">Li</a>
+        </div>
+      </div>
+
+      <div class="footer-col">
+        <h5>Navigate</h5>
+        <ul role="list">
+          <li><a href="#what-is">What is it?</a></li>
+          <li><a href="#benefits">Benefits</a></li>
+          <li><a href="#session">The session</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#book">Book</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h5>Contact</h5>
+        <ul role="list">
+          <li><a href="mailto:hola@mllorente.com">hola@mllorente.com</a></li>
+          <li><a href="#">Instagram</a></li>
+          <li><a href="#">LinkedIn</a></li>
+        </ul>
+      </div>
+
+    </div>
+
+    <div class="footer-bottom">
+      <span>© <span id="currentYear"></span> Anytime Anywhere Meditation · M. Llorente. All rights reserved.</span>
+      <span>Online · Spain</span>
+    </div>
+
+  </div>
+</footer>
+
+<!-- Script -->
+<script src="script.js"></script>
+
+</body>
+</html>
